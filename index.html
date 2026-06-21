@@ -252,7 +252,9 @@ header.nav::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height
 
 /* footer */
 footer{border-top:1px solid var(--line);background:var(--panel)}
-.foot{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:36px 0}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:34px 0 20px}
+.foot-disc{max-width:860px;margin:0;padding:0 0 36px;font-size:12px;line-height:1.6;color:var(--muted)}
+.foot-disc-k{color:var(--text);font-weight:600}
 .foot small{font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.03em}
 
 .reveal{opacity:0;transform:translateY(18px)}
@@ -504,7 +506,7 @@ footer{border-top:1px solid var(--line);background:var(--panel)}
 .flowframe-bar .dot{width:9px;height:9px;border-radius:50%;background:var(--violet);box-shadow:0 0 9px var(--violet)}
 .flowframe-bar .t{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--ink);font-weight:600}
 .flowframe-bar .r{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--faint)}
-.flowscroll{overflow-x:auto;padding:34px 26px 30px;background:radial-gradient(130% 120% at 50% -10%,rgba(124,92,252,.05),transparent 60%)}
+.flowscroll{overflow-x:auto;padding:22px 26px 20px;background:radial-gradient(130% 120% at 50% -10%,rgba(124,92,252,.05),transparent 60%)}
 .flowscroll svg{display:block;width:100%;min-width:940px;height:auto}
 
 .fc-node{fill:#fff;stroke:var(--line-strong);stroke-width:1.5}
@@ -853,7 +855,7 @@ body.sbx-on #sbxbadge{display:inline-flex}
             <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">ERP_GL_transaction_export.csv</span><span class="tk">~8.2k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">ERP_IC_journal_export.csv</span><span class="tk">~2.4k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">🏦</span><span class="fn">Trust_Account_Statements.pdf</span><span class="tk">~11k tok</span></div>
-            <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">Payroll_Register_export.csv</span><span class="tk">~3.6k tok</span></div>
+            <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">Bank_Statement_export.csv</span><span class="tk">~3.6k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">🎙</span><span class="fn">Nov2025_Process_Recordings</span><span class="tk">~14k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">▦</span><span class="fn">Nov2025_Verified_Close.xlsx</span><span class="tk">~5.1k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">Funding_Requests.pdf</span><span class="tk">~1.2k tok</span></div>
@@ -864,7 +866,7 @@ body.sbx-on #sbxbadge{display:inline-flex}
             <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">ERP_GL_transaction_export.csv</span><span class="tk">~8.2k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">ERP_IC_journal_export.csv</span><span class="tk">~2.4k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">🏦</span><span class="fn">Trust_Account_Statements.pdf</span><span class="tk">~11k tok</span></div>
-            <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">Payroll_Register_export.csv</span><span class="tk">~3.6k tok</span></div>
+            <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">Bank_Statement_export.csv</span><span class="tk">~3.6k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">🎙</span><span class="fn">Nov2025_Process_Recordings</span><span class="tk">~14k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">▦</span><span class="fn">Nov2025_Verified_Close.xlsx</span><span class="tk">~5.1k tok</span></div>
             <div class="ctx-row"><span class="ctx-ic">🗎</span><span class="fn">Funding_Requests.pdf</span><span class="tk">~1.2k tok</span></div>
@@ -983,7 +985,7 @@ body.sbx-on #sbxbadge{display:inline-flex}
       <div class="flowframe">
         <div class="flowframe-bar"><span class="dot"></span><span class="t">order-to-cash &middot; process map</span><span class="r">closed-won &rarr; cash &rarr; close</span></div>
         <div class="flowscroll">
-          <svg viewBox="0 0 1276 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Order-to-cash process map from closed-won deal through invoicing, revenue recognition, collections and close">
+          <svg viewBox="0 80 1276 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Order-to-cash process map from closed-won deal through invoicing, revenue recognition, collections and close">
             <defs>
               <linearGradient id="fcGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C5CFC"/><stop offset="1" stop-color="#C77DFF"/></linearGradient>
               <marker id="fcArrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7C5CFC"/></marker>
@@ -1265,6 +1267,7 @@ body.sbx-on #sbxbadge{display:inline-flex}
     <!-- EDIT -->
     <small>The 18-Day Ramp · turning ambiguity into architecture · Finance Engineer Cup · Finals</small>
   </div>
+  <div class="wrap"><p class="foot-disc"><span class="foot-disc-k">Context:</span> This presentation reflects my own work, experience, and point of view. It is not an official company statement, and I have generalized or simplified examples to keep the focus on the finance engineering ideas.</p></div>
 </footer>
 
 <script>
